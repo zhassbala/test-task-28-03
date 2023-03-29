@@ -57,4 +57,5 @@ export default {
     },
   },
   buildDir: 'dist',
+  target: 'static', // this is for netlify, when removing it the site actually renders on server
 }
