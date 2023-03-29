@@ -44,10 +44,10 @@
 </template>
 
 <script lang="ts">
-import { PropType } from 'vue'
+import { PropType, defineComponent } from 'vue'
 import { Item } from '~/types'
 
-export default {
+export default defineComponent({
   components: {},
   props: {
     item: {
@@ -69,5 +69,5 @@ export default {
       }
     },
   },
-}
+})
 </script>

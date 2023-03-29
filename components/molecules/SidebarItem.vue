@@ -9,10 +9,10 @@
 </template>
 
 <script lang="ts">
-import { PropType } from 'vue'
+import { PropType, defineComponent } from 'vue'
 import type { Category } from '~/types'
 
-export default {
+export default defineComponent({
   props: {
     categoryName: {
       type: String as PropType<Category | 'all'>,
@@ -31,5 +31,5 @@ export default {
       }
     },
   },
-}
+})
 </script>

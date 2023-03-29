@@ -5,11 +5,11 @@
 </template>
 
 <script lang="ts">
-// import { mapGetters } from 'vuex'
+import { defineComponent } from 'vue'
 import ItemCard from '../molecules/ItemCard.vue'
 import { Item } from '~/types'
 
-export default {
+export default defineComponent({
   components: {
     ItemCard,
   },
@@ -20,5 +20,5 @@ export default {
       )
     },
   },
-}
+})
 </script>

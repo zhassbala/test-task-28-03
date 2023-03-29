@@ -5,10 +5,10 @@
 </template>
 
 <script lang="ts">
-// import { mapGetters } from 'vuex'
+import { defineComponent } from 'vue'
 import ItemCard from '../molecules/ItemCard.vue'
 
-export default {
+export default defineComponent({
   components: {
     ItemCard,
   },
@@ -17,5 +17,5 @@ export default {
       return this.$store.getters['catalog/filteredItems']
     },
   },
-}
+})
 </script>

@@ -20,10 +20,11 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue'
 import SidebarItem from '../molecules/SidebarItem.vue'
 import { categories, Category } from '~/types'
 
-export default {
+export default defineComponent({
   name: 'ISidebar',
   components: {
     SidebarItem,
@@ -31,5 +32,5 @@ export default {
   setup() {
     return { categories: ['all', ...categories] as Array<Category | 'all'> }
   },
-}
+})
 </script>

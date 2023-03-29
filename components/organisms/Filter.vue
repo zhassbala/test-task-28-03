@@ -17,7 +17,9 @@
 </template>
 
 <script lang="ts">
-export default {
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   name: 'IFilter',
   components: {},
   methods: {
@@ -28,5 +30,5 @@ export default {
       )
     },
   },
-}
+})
 </script>
